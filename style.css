@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    --outif: "Outfit", sans-serif;
+    --young-serif: "Young Serif", serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Stone-100);
+    display: grid;
+    place-content: center;
+}
+.recipe-page{
+    max-width: 700px;
+    padding: 30px;
+    background-color: var(--White);
+    border-radius: 20px;
+    margin: 100px 0;
+
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.description{
+    margin-bottom: 20px;
+}
+.description h1{
+    font-family: var(--young-serif);
+    font-size: 30px;
+    color: var(--Stone-900);
+    margin-bottom: 20px;
+}
+.description p{
+    font-family: var(--outif);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Stone-600);
+}
+.preparation-time{
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.preparation-time h3{
+    font-family: var(--outif);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Rose-800);
+    line-height: 2;
+}
+.preparation-time ul li::marker{
+    color: var(--Rose-800);
+    font-weight: bold;
+}
+.preparation-time ul li{
+    font-family: var(--outif);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Stone-600);
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.preparation-time ul li span{
+    color: var(--Stone-900);
+    font-weight: 700;
+}
+.ingredients{
+    border-bottom: 1px solid var(--Stone-150);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.ingredients h2{
+    font-family: var(--young-serif);
+    font-size: 25px;
+    color: var(--Brown-800);
+    margin-bottom: 15px;
+}
+.ingredients ul li::marker{
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+.ingredients ul li{
+    font-family: var(--outif);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Stone-600);
+   margin-bottom: 10px;
+   padding-left: 15px;
+}
+.instructions{
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.instructions h2{
+    font-family: var(--young-serif);
+    font-size: 25px;
+    color: var(--Brown-800);
+    margin-bottom: 15px;
+}
+.instructions ol li::marker{
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+.instructions ol li{
+    font-family: var(--outif);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Stone-600);
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.instructions ol li span{
+    color: var(--Stone-900);
+    font-weight: 700;
+}
+.nutrition h2{
+    font-family: var(--young-serif);
+    font-size: 25px;
+    color: var(--Brown-800);
+    margin-bottom: 15px;
+}
+.nutrition p{
+    font-family: var(--outif);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Stone-600);
+    margin-bottom: 10px;
+}
+.nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition table td{
+    font-family: var(--outif);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Stone-600);
+    padding: 10px;
+
+}
+.nutrition table .bold{
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+.nutrition table .border{
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+
+@media (max-width:375px){
+    body{
+        background: transparent;
+    } 
+    .recipe-page{
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+    .description{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .preparation-time{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .ingredients{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .instructions{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .nutrition{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+
